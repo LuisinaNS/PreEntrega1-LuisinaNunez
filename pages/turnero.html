@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Óptica Online/Turnos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	
+	<header class="estiloHeader">
+		<nav>
+			<img src="../assets/images/LogoOpticaOnline.svg" alt="Logo" width="250">
+				<a class="ancla" href="../index.html">Principal</a>
+				<a class="ancla" href="./nosotros.html">Nosotros</a>
+				<a class="ancla" href="./servicios.html">Servicios</a>
+				<a class="ancla" href="./productos.html">Productos</a>			
+		</nav>
+	</header>
+	
+    <main>
+   		<section>
+            <h3>Complete sus datos:</h3>
+            <form action="validar.html">
+                <div>
+                   <input id="nombre" placeholder="Nombre" name="Nombre" type="text" required>
+                </div>
+                <br>
+                <div>
+                    <input id="apellido" placeholder="Apellido" name="Apellido" type="text" required>
+                </div>
+                <br>
+                <div>
+                    <input id="DNI" placeholder="DNI" name="DNI" type="number" required>
+                </div>
+                <br>
+                <!-- elegir servicio -->
+                <div>                    
+                    <select name="servicio" id="servicio">
+                        <option value="fonoaudiologia" selected>Servicio:</option>
+                        <option value="opticaYOptopmetria">Óptica y Optometría</option>
+                        <option value="fonoaudiologia">Fonoaudiología</option>
+                    </select>
+                </div>
+                <br>
+                <!-- elegir modo de atención -->
+                <div>
+                    <select name="particular/OS" id="particular/OS">                                                    
+                        <option value="particular" selected>PARTICULAR/OS</option>
+                        <option value="particular">PARTICULAR/OS</option>                      
+                        <option value="osde">OSDE</option>
+                        <option value="prevencionSalud">PREVENCION SALUD</option>
+                        <option value="omint">OMINT</option>
+                        <option value="sancorSalud">SANCOR SALUD</option>
+                        <option value="swissMedical">SWISS MEDICAL</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input id="tel" placeholder="Tel/Cel:" name="tel" type="number" required>
+                </div>
+                <br>
+                <div>
+                    <input id="mail" placeholder="E Mail:" name="mail" type="text" required>
+                </div>
+                <br>
+                <h3>Seleccione fecha y horario:</h3>
+                <div>
+                    <input id="fecha" name="fecha" type="date" required>
+                </div>
+                <br>
+                <div>
+                    <select name="horarios" id="horarios">
+                        <option value="9hs"> <selected>Horarios disponibles:</option>
+                        <option value="10hs">90:00hs</option>
+                        <option value="10hs">10:00hs</option>
+                        <option value="10hs">15:00hs</option>
+                    </select>
+                </div>               
+            </form>
+        </section>
+        <br>
+            <div>
+                <button><a href="">Agendar turno</a></button>                
+            </div>
+    </main>
+	
+	<footer class="footer">		
+        <h4>Contactanos</h4>
+        <br>
+        <p>Whatsapp: #### ######</p>
+            <p>Teléfono: ##### ######</p>
+        <p>E Mail: contacto@opticanunez.com</p>
+        <br>
+        <p class="derechos">Óptica Nuñez - Todos los derechos reservados 2022</p>		
+</footer>
+
+</body>
+</html>
